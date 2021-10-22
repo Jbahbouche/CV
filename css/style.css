@@ -1,0 +1,362 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/Montserrat-Medium.otf);
+}
+@font-face {
+    font-family: cabin;
+    src: url(../fonts/Cabin-Regular.ttf);
+}
+
+* {
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: cabin;
+}
+body{
+    position: relative;
+    
+}
+.titre{
+    font-family: montserrat;
+}
+
+/*************************************************************************  Style Pour Header ************************/
+header{
+    position:relative;
+    height: 38vh;
+    background: linear-gradient(#727F88, #484B50);
+}
+#moi{
+    position :absolute;
+    right: 15vw;
+    top : 10vh;
+    height: 40vh;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.pos{
+    display:flex;
+    position : absolute;
+}
+h5{
+    color: white
+}
+#phone{
+    top:24vh;
+    left : 15vw;
+}
+a{
+    text-decoration: none;
+}
+#mail{
+    top:30vh;
+    left : 15vw;
+}
+#web{
+    top:24vh;
+    left : 40vw;
+}
+#adresse{
+    top:30vh;
+    left : 40vw;
+}
+h1{
+    color: white;
+    top : 10px;
+    left : 10vw;
+    font-size: 4rem !important;
+}
+h2{
+    color: white;
+    top : 13vh;
+    left : 15vw;
+    font-size: 3rem !important;
+}
+.sect{
+    width: 35vw;
+    height: auto;
+    position: absolute;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-bottom : solid rgba(94, 93, 93, 0.404);
+
+}
+/*************************************************************************  Profil  ************************/
+
+.sect img{
+    margin-left: 5vw;
+}
+.texte{
+    text-justify: inter-character;
+    text-align: justify;
+}
+h3{
+    color: #6B899E;
+}
+#profil{
+    top: 390px;
+    left: 13vw;
+}
+/*************************************************************************  Compétences  ************************/
+#competences{
+    right: 13vw;
+    top: 480px;
+}
+#HTML{
+    width: 80%;
+}
+#CSS{
+    width: 80%;
+}
+#bootstrap{
+    width :80%;
+}
+#javascript{
+    width:80%;
+}
+#SQL{
+    width: 30%;
+}
+#PHP{
+    width: 30%;
+}
+#wordpress{
+    width: 70%;
+}
+/*************************************************************************  Formations  ************************/
+#formation{
+    top: 670px;
+    left: 13vw;
+}
+
+.vertical-line{
+  border-left: 2px solid rgba(94, 93, 93, 0.404);
+  display: inline-flex;
+  height: 130px;
+  margin: 5px;
+}
+
+/*************************************************************************  Experience  ************************/
+#experience{
+    top: 970px;
+    left: 13vw;
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    z-index: 99;
+  }
+
+/*************************************************************************  Soft Skills ************************/
+#skill{
+    right: 13vw;
+    top:903px;
+}
+#autonomie{
+    width: 90%;
+}
+#leadership{
+    width: 80%;
+}
+#adaptabilité{
+    width: 80%;
+}
+#decision{
+    width: 70%;
+}
+#rigueur{
+    width: 65%;
+}
+#organisation{
+    width: 65%;
+}
+/*************************************************************************  Loisirs ************************/
+#interet{
+    right: 13vw;
+    top: 1283px;
+}
+
+/*************************************************************************  Plus loin ************************/
+
+#loin{
+    top: 1270px;
+    left: 13vw;
+}
+/*************************************************************************  Footer ************************/
+footer{
+    position:absolute;
+    height: 5vh;
+    width: 99vw;
+    background-color: black;
+    top : 1491px;
+    text-align: center;
+    color :white;
+
+}
+/*************************************************************************  Media *************************************************************************************/
+/***************************************  Tablette ************************/
+@media(max-width:1200px){
+    #moi{
+        position :absolute;
+        right: 3vw;
+        top : 10vh;
+        height: 25vh;
+    }
+    #phone{
+        top:24vh;
+        left : 12vw;
+    }
+    #mail{
+        top:30vh;
+        left : 12vw;
+    }
+    .sect{
+        width: 38vw;
+        height: auto;
+        position: absolute;
+        text-align: center;
+
+        padding-top: 2vh;
+        margin-bottom: 2vh;
+        border-bottom : solid rgba(94, 93, 93, 0.404);
+    }
+    #profil{
+        left: 9vw;
+        top: 490px;
+    }
+    #competences{
+        right: 9vw;
+        top:490px;
+    }
+    #formation{
+        left: 9vw;
+        top: 835px;
+    }
+    #experience{
+        top: 1172px;
+        left: 9vw;
+    }
+    #skill{
+        right: 9vw;
+        top:968px;
+    }
+    #interet{
+        right: 9vw;
+        top: 1363px;
+    }
+    footer{
+        position:absolute;
+        height: 5vh;
+        width: 100vw;
+        background-color: black;
+        top : 1700px;
+        text-align: center;
+        color :white;
+    
+    }
+    #loin{
+        top: 1485px;
+        left: 9vw;
+    }
+    h1{
+        font-size: 3rem !important;
+    }
+    h2{
+        font-size: 2.5rem !important;
+    }
+}
+/**************Telephone*******************/
+@media(max-width:767px){
+    h1{
+        color: white;
+        top : 1vh;
+        left : 3vw;
+        font-size: 2rem !important;
+    }
+    #moi{
+        position :absolute;
+        right: 1vw;
+        top : 12vh;
+        height: 22vh;
+    }
+    #mail{
+        top:20vh;
+        left : 2vw;
+    }
+    #web{
+        top:25vh;
+        left : 2vw;
+    }
+    #adresse{
+        top:30vh;
+        left : 2vw;
+    }
+    #phone{
+        top:260px;
+        left : 2vw;
+    }
+    h5{
+        font-size: 1rem !important;
+    }
+    .icon{
+        width: 20px;
+        height: 20px;
+    }
+    h2{
+        color: white;
+        top : 7vh;
+        left : 5vw;
+        font-size: 2rem !important;
+    }
+    .sect{
+        width: 80vw;
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 3vh;
+        border-bottom : solid rgba(94, 93, 93, 0.404);
+    }
+    #profil{
+        top: 280px;
+        left: 10vw;
+    }
+    #competences{
+        top: 620px;
+        left: 10vw;
+    }
+    #formation{
+        top: 1050px;
+        left: 10vw;
+    }
+    #experience{
+        top: 1400px;
+        left: 10vw;
+    }
+    #skill{
+        left: 10vw;
+        top:1700px;
+    }
+    #interet{
+        left: 10vw;
+        top:2100px;
+    }
+    footer{
+        position:absolute;
+        height: 4vh;
+        width: 100vw;
+        background-color: black;
+        top : 2520px;
+        text-align: center;
+        color :white;
+    
+    }
+    #loin{
+        top: 2320px;
+        left: 10vw;
+    }
+}

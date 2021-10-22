@@ -1,0 +1,177 @@
+@font-face {
+    font-family: montserratbold;
+    src: url(../fonts/Montserrat-Medium.otf);
+}
+@font-face {
+    font-family: cabin;
+    src: url(../fonts/Cabin-Regular.ttf);
+}
+* {
+    margin:0;
+    padding:0;
+    font-family: cabin;
+}
+body{
+    position: relative;
+    background-image: url('../img/fondtest.jpg');
+    background-size: cover;
+
+}
+.bg-custom{
+    background-color: rgba(105, 105, 105, 0);
+}
+header{
+    height: 20vh;
+    box-shadow: 5px 2px 2px black;
+
+}
+#x{
+    text-align: center;
+    display: flex;
+    margin :auto;
+
+}
+.clickable:hover{
+    width: 8vw;
+    height: auto;
+    transition-duration: 0.5s;
+}
+.pos{
+    position: absolute;
+}
+#raccourcis{
+    height: 3vh;
+}
+#empiler{
+    top: 60px;
+
+}
+#imagedemoi{
+    width: 5vw;
+    height:auto;
+    background-image: url('../img/moi.jpg');
+    border-radius: 50%;
+    z-index: 2;
+}
+#deplacer{
+    top : 30px;
+}
+.carte{
+    width: 7vw;
+    border-radius: 5%;
+    display: flex;
+    box-shadow: 5px 2px 2px black;
+    position: absolute;
+    top : 3vh;
+}
+.pile{
+    position:absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    top: 35vh;
+    right: 45vw;
+    left:45vw;
+}
+.transformation {
+    transform: translate3d(0,0,0);
+    transition-duration: 3s;
+  }
+#deplacer{
+    background-image: url('../img/moi.jpg');
+    margin-left: 5vw;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    border-radius: 50%;
+}
+#navbar{
+    z-index: 7;
+}
+#presentation h2{
+    font-size: 3em;
+    margin-left: 5vw;
+    font-family:montserratbold;
+}
+#presentation p{
+    font-size: 1.5em;
+    margin-left: 5vw;
+}
+/*************Media ***********/
+/****************Tablette************************/
+@media(max-width:1200px){
+    .carte{
+        width: 15vw;
+    }
+    .clickable:hover{
+        width: 18vw;
+        height: auto;
+        transition-duration: 0.5s;
+    }
+    header{
+        height: 15vh;
+        box-shadow: 5px 2px 2px black;
+
+    }
+    #presentation h2{
+        font-size: 3.5em;
+        margin-left: 0;
+    }
+    #presentation p{
+        font-size: 1.3em;
+        margin-left:0;
+    }
+    .bg-custom{
+        background-color: rgba(161, 154, 154, 0.788);
+    }
+}
+/**************Telephone*******************/
+@media(max-width:767px){
+    .carte{
+        width: 15vw;
+    }
+    .clickable:hover{
+        width: 18vw;
+        height: auto;
+        transition-duration: 0.5s;
+    }
+    .pile{
+        top: 35vh;
+        right: 40vw;
+        left:40vw;
+    }
+    body{
+        background-size: none;
+    }
+    header{
+        height: 20vh;
+        box-shadow: 5px 2px 2px black;
+
+    }
+    p{
+        font-size: smaller;
+    }
+    button{
+        width: 20vw;
+    }
+    #deplacer{
+        background-image: url('../img/moi.jpg');
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        border-radius: 50%;
+        margin-left:0;
+    }
+    .bg-custom{
+        background-color: rgba(161, 154, 154, 0.788);
+    }
+    #presentation h2{
+        font-size: 1.1em;
+        margin-left: 0;
+    }
+    #presentation p{
+        font-size: 0.85em;
+        margin-left:0;
+    }
+}
